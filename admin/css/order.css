@@ -1,0 +1,79 @@
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  overflow-x: auto;
+}
+
+th,
+td {
+  padding: 8px;
+  border: 1px solid #ddd;
+  text-align: left;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+td.catatan {
+  max-width: 150px;
+  white-space: normal;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+td.alamat {
+  max-width: 250px;
+  white-space: normal;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+th {
+  background-color: #f4f4f4;
+}
+
+form button {
+  padding: 6px 10px;
+  margin: 0 3px;
+  border: none;
+  background-color: #28a745;
+  color: #fff;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+form button[name="action"][value="reject"] {
+  background-color: #dc3545;
+}
+
+form button[name="action"][value="complete"] {
+  background-color: #007bff;
+}
+
+@media (max-width: 768px) {
+  table {
+    width: 100%;
+  }
+
+  form button {
+    padding: 5px 8px;
+    font-size: 10px;
+  }
+}

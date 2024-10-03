@@ -1,0 +1,75 @@
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: white;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.table {
+  width: 100%;
+  margin: 1rem;
+  background-color: transparent;
+}
+
+.table th,
+.table td {
+  vertical-align: top;
+  border-top: 1px solid #dee2e6;
+}
+.table .alamat {
+  max-width: 120px;
+  white-space: normal;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.table .tgl {
+  width: 120px;
+}
+th {
+  font-size: 1.2rem;
+}
+.table thead th {
+  vertical-align: bottom;
+  border-bottom: 2px solid #dee2e6;
+  background-color: #eee;
+  text-align: center;
+}
+
+.table-bordered {
+  border: 1px solid #dee2e6;
+}
+
+.table-bordered th,
+.table-bordered td {
+  border: 2px solid #dee2e6;
+}
+
+.table img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Responsif */
+@media (max-width: 991px) {
+  html {
+    font-size: 55%;
+  }
+}
+
+@media (max-width: 768px) {
+  .table {
+    overflow-x: auto;
+  }
+}
+
+@media (max-width: 450px) {
+  html {
+    font-size: 50%;
+  }
+}

@@ -1,0 +1,87 @@
+/* Mengatur reset default browser styles */
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ffc700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url(../images/bananabg.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.container {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 50px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 3px;
+  width: 100%;
+  max-width: 500px;
+  text-align: center;
+}
+
+.nama {
+  display: flex;
+  justify-content: space-between;
+}
+.nama input {
+  width: 48%;
+}
+.other {
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  margin-bottom: 10px;
+  padding: 10px;
+  font-size: 16px;
+  background-color: #e4e3e3;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+input[type="submit"],
+input[type="reset"] {
+  width: 10rem;
+  margin-top: 10px;
+  margin: auto 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 3px;
+}
+
+input[type="submit"] {
+  background-color: #ffc700;
+  color: white;
+}
+
+input[type="reset"] {
+  background-color: #ab0011;
+  color: white;
+}
+
+input[type="submit"]:hover {
+  background-color: black;
+}
+
+input[type="reset"]:hover {
+  background-color: #6f000b;
+}
+.container p {
+  padding: 9px;
+}
+.container a {
+  text-decoration: none;
+}
